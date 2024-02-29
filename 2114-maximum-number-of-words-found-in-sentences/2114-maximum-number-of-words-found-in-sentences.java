@@ -2,9 +2,9 @@ class Solution {
     public int mostWordsFound(String[] sentences) {
       int[] arr=new int[sentences.length];
         int max=0;
-        for(String ans:sentences)
+        for(int i=0;i<sentences.length;i++)
         {
-         int words=ans.split("\\s+").length;
+         int words=sentences[i].split("\\s+").length;
           if(max<words)
           {
               max=words;
